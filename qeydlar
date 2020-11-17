@@ -1,0 +1,45 @@
+html yarat icine front qoy
+routes yarat run et
+db yarat
+sqlalchemynin adresni qeyd ed
+model yarat 
+init funcsyasni yaz
+
+dbni yoxla
+====================
+terminalda from esas run import db ele sonra hemin db ni 1 defe create ele
+sonra new class yarat ona 
+db.session.add(new)
+sonra commit ele
+sonra query yolla (classin adi.query.all())-- db da ne varsa cixarir
+variable = class.query.all()deyerek db ni getir yoxla
+read yarat 
+=========================
+html sehifesne get db ile baglanacaq datalari for a sal ve dinamik olan data ni {{ person.title }} tipinde yaz
+
+insert yarat 
+=========================
+html de forma action ve metod yazirsan, ve flash (secret key) elave edirseb
+
+delete yarat
+============================
+route da delete ve id yaz unvani
+func yradanda id otur icine
+veriable beraber et sorgu ile id getir
+db den sil ve commit ele 
+flash yolla indexe qayit
+ html hssede ise link yerine url ve id yerlesdir
+
+
+ edit yarat 
+ ================================
+route yaradib icine id ile unvan verirsen metod yazirsan
+func yazanda icine id otur 
+variable ile id ni db dan gotur
+hemin variable a gore ad soyad ve s  
+edit_person.name = request.form['name'] tipunde editlenecek datani sec 
+db ya commit ele 
+flash yaz qayit indexe
+html de modalin ozune id otur 
+forma editin unvanini yaz ve id ni qeyd ele
+editlenecek hisseleri dinamiklesidr
